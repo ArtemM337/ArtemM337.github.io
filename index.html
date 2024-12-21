@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Проект за макетом Влад і Артем</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Кнопка кошика -->
+    <button class="cart-button" onclick="window.location.href='cart.html'">
+        <svg class="cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+    </button>
+
+    <header>
+        <img class="logo" src="https://yesoriginal.com.ua/image/cache/wp/lp/yesoriginal/new-logo.webp" alt='Тут має бути картинка'>
+        <div class="menu">
+            <a class="menu-elements">ЧОЛОВІЧЕ</a>
+            <a class="menu-elements">ЖІНОЧЕ</a>
+            <a class="menu-elements">ДИТЯЧЕ</a>
+            <a class="menu-elements">СПОРТ</a>
+            <a class="menu-elements">БРЕНДИ</a>
+            <a class="menu-elements">АКСЕСУАРИ</a>
+            <a class="menu-elements-red">ЗНИЖКИ</a>
+        </div>
+    </header>
+
+    <main>
+        <img class="loft" src="https://yesoriginal.com.ua/image/cache/catalog/yesoriginal/banner/exclusive-1585x490.webp" alt='Тут має бути картинка'>
+        <div class="banners-container">
+            <img class="loft-1" src="https://yesoriginal.com.ua/image/cache/wp/lj/yesoriginal/banner_autumn_2024/01_ua.webp" alt='Тут має бути картинка'>
+            <img class="loft-2" src="https://yesoriginal.com.ua/image/cache/wp/lj/yesoriginal/banner_autumn_2024/02_ua.webp" alt='Тут має бути картинка'>
+            <img class="loft-1" src="https://yesoriginal.com.ua/image/cache/wp/lj/yesoriginal/banner_autumn_2024/03_ua.webp" alt='Тут має бути картинка'>
+            <img class="loft-2" src="https://yesoriginal.com.ua/image/cache/wp/lj/yesoriginal/banner_autumn_2024/04_ua.webp" alt='Тут має бути картинка'>
+        </div>
+
+        <div class="brands-section">
+            <div class="brand-item">
+                <img class="band" src="https://yesoriginal.com.ua/image/cache/catalog/yesoriginal/brand/nike-100x100.webp" alt='Nike'>
+                <a class="brend-elements-1">NIKE</a>
+            </div>
+            <div class="brand-item">
+                <img class="band" src="https://yesoriginal.com.ua/image/cache/catalog/yesoriginal/brand/new-balance-100x100.webp" alt='New Balance'>
+                <a class="brend-elements-2">NEW BALANCE</a>
+            </div>
+            <div class="brand-item">
+                <img class="band" src="https://yesoriginal.com.ua/image/cache/catalog/yesoriginal/brand/puma-100x100.webp" alt='Puma'>
+                <a class="brend-elements-3">PUMA</a>
+            </div>
+            <div class="brand-item">
+                <img class="band" src="https://yesoriginal.com.ua/image/cache/catalog/yesoriginal/brand/gap-100x100.webp" alt='Gap'>
+                <a class="brend-elements-4">GAP</a>
+            </div>
+            <div class="brand-item">
+                <img class="band" src="https://yesoriginal.com.ua/image/cache/catalog/yesoriginal/brand/reebok-100x100.webp" alt='Reebok'>
+                <a class="brend-elements-5">REEBOK</a>
+            </div>
+            <div class="brand-item">
+                <img class="band" src="https://yesoriginal.com.ua/image/cache/catalog/yesoriginal/brand/adidas-100x100.webp" alt='Adidas'>
+                <a class="brend-elements-6">ADIDAS</a>
+            </div>
+            <div class="brand-item">
+                <img class="band" src="https://yesoriginal.com.ua/image/cache/catalog/yesoriginal/brand/air-jordan-100x100.webp" alt='Air Jordan'>
+                <a class="brend-elements-7">AIR JORDAN</a>
+            </div>
+        </div>
+
+        <!-- Секція з товарами -->
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://yesoriginal.com.ua/image/cache/catalog/products/nike/dunk/dunk-low-court-purple-1-600x600.webp" alt="Nike Dunk Low">
+                <h3>Nike Dunk Low Court Purple</h3>
+                <div class="price">₴7999</div>
+                <button class="add-to-cart-btn" onclick="addToCart({name: 'Nike Dunk Low Court Purple', price: 7999})">
+                    Додати до кошика
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="https://yesoriginal.com.ua/image/cache/catalog/products/nike/af1/nike-air-force-1-07-white-1-600x600.webp" alt="Nike Air Force 1">
+                <h3>Nike Air Force 1 '07 White</h3>
+                <div class="price">₴5999</div>
+                <button class="add-to-cart-btn" onclick="addToCart({name: 'Nike Air Force 1 07 White', price: 5999})">
+                    Додати до кошика
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="column">
+            <p>Працюємо щодня<br>з 9:00 до 21:00</p>
+            <p>Телефони</p>
+            <p>+38 (098) 398 31 17<br>+38 (095) 619 07 15<br>+38 (063) 282 52 50</p>
+        </div>
+        <div class="column">
+            <p>Кросівки</p>
+            <p>Куртки</p>
+            <p>Толстовки</p>
+            <p>Худі</p>
+            <p>Кофти</p>
+            <p>Штани</p>
+            <p>Спортивні костюми</p>
+        </div>
+        <div class="column">
+            <p>Відгуки</p>
+            <p>Контакти</p>
+            <p>Програма лояльності</p>
+            <p>Подарункові сертифікати</p>
+            <p>Дропшипінг</p>
+            <p>Допомога покупцеві</p>
+            <p>Доставка і оплата</p>
+            <p>Повернення та обмін</p>
+            <p>Політика конфіденційності</p>
+            <p>Договір публічної оферти</p>
+            <p>Правила використання сертифікату</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

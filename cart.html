@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Кошик - Yes Original</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="https://yesoriginal.com.ua/image/cache/wp/lp/yesoriginal/new-logo.webp" alt='Логотип'>
+        <div class="menu">
+            <a href="index.html" class="menu-elements">ГОЛОВНА</a>
+            <a class="menu-elements">ЧОЛОВІЧЕ</a>
+            <a class="menu-elements">ЖІНОЧЕ</a>
+            <a class="menu-elements">ДИТЯЧЕ</a>
+            <a class="menu-elements">СПОРТ</a>
+            <a class="menu-elements">БРЕНДИ</a>
+            <a class="menu-elements-red">ЗНИЖКИ</a>
+        </div>
+    </header>
+    
+    <main class="cart-page">
+        <h1>Кошик</h1>
+        <div class="cart-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Товар</th>
+                        <th>Ціна</th>
+                        <th>Кількість</th>
+                        <th>Сума</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Тут будуть товари -->
+                </tbody>
+            </table>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <strong>До сплати: </strong>
+                    <span id="total-price">₴0.00</span>
+                </div>
+                <button id="checkout-btn" class="checkout-button">Оформити замовлення</button>
+            </div>
+            <div id="empty-cart-message" class="empty-cart-message" style="display: none;">
+                <p>Ваш кошик порожній</p>
+                <a href="index.html" class="continue-shopping">Продовжити покупки</a>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="column">
+            <p>Працюємо щодня<br>з 9:00 до 21:00</p>
+            <p>Телефони</p>
+            <p>+38 (098) 398 31 17<br>+38 (095) 619 07 15<br>+38 (063) 282 52 50</p>
+        </div>
+        <div class="column">
+            <p>Кросівки</p>
+            <p>Куртки</p>
+            <p>Толстовки</p>
+            <p>Худі</p>
+            <p>Кофти</p>
+            <p>Штани</p>
+            <p>Спортивні костюми</p>
+        </div>
+        <div class="column">
+            <p>Відгуки</p>
+            <p>Контакти</p>
+            <p>Програма лояльності</p>
+            <p>Подарункові сертифікати</p>
+            <p>Дропшипінг</p>
+            <p>Допомога покупцеві</p>
+            <p>Доставка і оплата</p>
+            <p>Повернення та обмін</p>
+            <p>Політика конфіденційності</p>
+            <p>Договір публічної оферти</p>
+            <p>Правила використання сертифікату</p>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>
