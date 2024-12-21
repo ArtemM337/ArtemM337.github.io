@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Чоловічий одяг - Yes Original</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="cart-button" onclick="window.location.href='cart.html'">
+        <svg class="cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+    </button>
+
+    <header>
+        <img class="logo" src="https://yesoriginal.com.ua/image/cache/wp/lp/yesoriginal/new-logo.webp" alt='Логотип'>
+        <div class="menu">
+            <a href="index.html" class="menu-elements">ГОЛОВНА</a>
+            <a href="mens.html" class="menu-elements">ЧОЛОВІЧЕ</a>
+            <a href="womens.html" class="menu-elements">ЖІНОЧЕ</a>
+            <a class="menu-elements">ДИТЯЧЕ</a>
+            <a class="menu-elements">СПОРТ</a>
+            <a class="menu-elements">БРЕНДИ</a>
+            <a class="menu-elements-red">ЗНИЖКИ</a>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="category-title">Чоловічий одяг</h1>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://yesoriginal.com.ua/image/cache/catalog/products/nike/tech-fleece/nike-tech-fleece-joggers-black-1-600x600.webp" alt="Nike Tech Fleece Joggers">
+                <h3>Nike Tech Fleece Joggers Black</h3>
+                <div class="price">₴4199</div>
+                <button class="add-to-cart-btn" onclick="addToCart({name: 'Nike Tech Fleece Joggers Black', price: 4199})">
+                    Додати до кошика
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="https://yesoriginal.com.ua/image/cache/catalog/products/nike/tech-fleece/nike-tech-fleece-full-zip-hoodie-black-1-600x600.webp" alt="Nike Tech Fleece Hoodie">
+                <h3>Nike Tech Fleece Hoodie Black</h3>
+                <div class="price">₴4599</div>
+                <button class="add-to-cart-btn" onclick="addToCart({name: 'Nike Tech Fleece Hoodie Black', price: 4599})">
+                    Додати до кошика
+                </button>
+            </div>
+            <div class="product-card">
+                <img src="https://yesoriginal.com.ua/image/cache/catalog/products/jordan/essentials/jordan-essentials-fleece-pullover-hoodie-black-1-600x600.webp" alt="Jordan Essentials Hoodie">
+                <h3>Jordan Essentials Hoodie Black</h3>
+                <div class="price">₴3299</div>
+                <button class="add-to-cart-btn" onclick="addToCart({name: 'Jordan Essentials Hoodie Black', price: 3299})">
+                    Додати до кошика
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <div class="footer">
+        <div class="column">
+            <p>Працюємо щодня<br>з 9:00 до 21:00</p>
+            <p>Телефони</p>
+            <p>+38 (098) 398 31 17<br>+38 (095) 619 07 15<br>+38 (063) 282 52 50</p>
+        </div>
+        <div class="column">
+            <p>Кросівки</p>
+            <p>Куртки</p>
+            <p>Толстовки</p>
+            <p>Худі</p>
+            <p>Кофти</p>
+            <p>Штани</p>
+            <p>Спортивні костюми</p>
+        </div>
+        <div class="column">
+            <p>Відгуки</p>
+            <p>Контакти</p>
+            <p>Програма лояльності</p>
+            <p>Подарункові сертифікати</p>
+            <p>Дропшипінг</p>
+            <p>Допомога покупцеві</p>
+            <p>Доставка і оплата</p>
+            <p>Повернення та обмін</p>
+            <p>Політика конфіденційності</p>
+            <p>Договір публічної оферти</p>
+            <p>Правила використання сертифікату</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

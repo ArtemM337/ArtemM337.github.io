@@ -269,4 +269,70 @@ header {
 
 .checkout-button {
     background: #4CAF50;
-    color
+}
+
+.category-title {
+    text-align: center;
+    font-family: 'Inter';
+    color: #333;
+    margin: 30px 0;
+    text-transform: uppercase;
+}
+
+/* Оновлені стилі для активних посилань в меню */
+.menu-elements {
+    position: relative;
+}
+
+.menu-elements:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+/* Оновлені стилі для карток товарів */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-card img {
+    transition: opacity 0.3s ease;
+}
+
+.product-card img:hover {
+    opacity: 0.9;
+}
+
+/* Анімація для кнопки додавання до кошика */
+.add-to-cart-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.add-to-cart-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+}
+
+.add-to-cart-btn:active::after {
+    width: 300px;
+    height: 300px;
+}
+
